@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link href={{url_for('static' , filename="styles2.css")}} rel="stylesheet"> <!-- Link to the CSS -->
+</head>
+<body>
+    <div class="result-container">
+        <h1>Prediction Result</h1>
+        <p>Based on the information provided, here is your heart disease prediction:</p>
+
+        <!-- Dynamic Result Section -->
+        <div class="result-box">
+            <h2 class="result.status">{{ prediction }}</h2>
+
+            <p class="result-detail"> 
+                {% if prediction=="No heart Disease Detected"%}
+                You are predicted to have a low likelihood of heart disease. However, please consult a healthcare professional for a thorough evaluation.
+                {% else %}
+                Based on the model’s prediction, you may be at risk. We recommend consulting a healthcare professional for a thorough evaluation.
+                {% endif %}
+            </p>
+        </div>
+
+        <!-- Button to go back to the form -->
+        <div class="button-container">
+            <button onclick="location.href='/index.html'">Go Back</button>
+        </div>
+    </div>
+</body>
+</html>

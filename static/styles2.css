@@ -1,0 +1,152 @@
+body{
+    width : 70% ;
+    margin :0 auto ;
+    background-color:aliceblue ;
+    
+}
+
+.form-container
+{
+    background-color: white;
+    margin:10px;
+    padding:50px ;
+}
+
+.form-container h1
+{
+    text-align: center;
+    margin-bottom: 0px ;
+    color :#14274E ;
+}
+.form-container p
+{
+    text-align: center;
+    padding : 0px ;
+    margin-top:0px ;
+    color : #3C91E6 ;
+
+}
+.button-class
+{
+    
+    margin-top: 20px;
+    text-align : center ;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+}
+label 
+{
+    margin-top: 10px ;
+}
+
+input[type="number"] , select ,input[type="radio"] 
+{
+    border : 1px solid #ddd ;
+    border-radius: 2px ;
+    padding : 3px ;
+    margin : 4px ;
+    margin-left : 0 px ;
+    widht : 200px ;
+
+}
+fieldset
+{
+    border : 1px solid #ddd ;
+    padding : 3px ;
+    margin-left : 0px ;
+    margin: 4px ;
+}
+legend {
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
+}
+
+select 
+{
+    margin : 10px ;
+    padding: 10px ;
+    border : 1px solid black;
+    border-radius: 2px;
+    background-color: #ffffff;
+
+}
+.form-container button{
+   
+
+    background-color :#3C91E6 ;
+    width : 200px ;
+    height: 40px;
+    color : white ;
+    border-radius : 12px ;
+    border-color : #3C91E6;
+}
+.form-container button:hover{
+    background-color :#FFC857 ;
+    border-radius : 12px ;
+    border-color : #FFC857;
+
+
+}
+
+
+/* Result Page Container */
+.result-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Header and Text */
+.result-container h1 {
+    font-size: 24px;
+    color: #333;
+}
+
+.result-container p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Result Box */
+.result-box {
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #e6f7ff;
+    border-left: 8px solid #87ceeb;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.result-box h2 {
+    color: #007bff;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.result-box p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Button Styling */
+.button-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button-container button:hover {
+    background-color: #0056b3;
+}
