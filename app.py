@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request
 import joblib
 import numpy as np
+import os
 
 app = Flask(__name__, template_folder='templates')
 
@@ -46,4 +47,6 @@ def predict():
     return render_template('index.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    # This will not be executed by Gunicorn
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 5000)))
+
