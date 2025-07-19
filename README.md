@@ -14,6 +14,11 @@ This project is a machine learning-based web application that predicts the likel
 
 ---
 
+## Overview
+
+This application uses a Logistic Regression model (trained with scikit-learn) to predict heart disease risk based on 13 clinical features. Users enter their health metrics through an HTML form, the data is processed by Flask, and the model returns a prediction along with guidance messages.
+
+🔗 **Live Demo:** [Click here to access the deployed app](https://heart-disease-prediction-xtjp.onrender.com/)
 
 
 ---
